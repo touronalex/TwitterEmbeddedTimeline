@@ -29,7 +29,6 @@
     <style type="text/css" media="screen">
         /* Fix for ui-bootstrap */
         .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
-
         /* Page styles */
         body { padding-top: 50px; }
         .panel {
@@ -93,5 +92,26 @@
                             <!-- Note: The sample Tweet below is missing the `twitter-tweet` class because it's being selectively rendered. -->
                             <a class="twitter-timeline-unrendered" href="https://twitter.com/IAmAru/lists/food-trucks" data-widget-id="673710543212052480"> Tweets from https://twitter.com/IAmAru/lists/food-trucks</a>
                         </div>
+    </div>
+        <h3 id="timelineLinked">Linked</h3>
+        <p>Given a Timeline with ID <code>673710543212052480</code>, simply add a <code>&lt;twitter-timeline&gt;</code> tag to your markup with an attribute named `twitter-timeline-id` specifying the Tweet ID.</p>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row" ng-controller="ToggleVisibilityCtrl">
+                    <div class="col-md-2">
+                        <button class="btn btn-primary" ng-class="{active: visible}" ng-click="visible = !visible">{{ visible ? "Remove" : "Load" }} Widget</button>
+                    </div>
+                    <div class="col-md-10">
+                        <div ng-if="visible">
+                            <twitter-timeline twitter-timeline-id="'673710543212052480'">
+                            </twitter-timeline>
+                        </div>              
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="bower_components/ngtweet/dist/ngtweet.min.js"></script>
+<script src="bower_components/prism/prism.js"></script>
+<script src="bower_components/prism/components/prism-bash.min.js"></script>
 </body>
 </html>
