@@ -83,12 +83,6 @@
     </style>
 </head>
 <body>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <div class="row" ng-controller="ToggleVisibilityCtrl">
-                    <div class="col-md-2">
-                        <button class="btn btn-primary" ng-class="{active: visible}" ng-click="visible = !visible">{{ visible ? "Remove" : "Load" }} Widget</button>
-                    </div>
                     <div class="col-md-10">
                         <div ng-if="visible">
                             <twitter-timeline>
