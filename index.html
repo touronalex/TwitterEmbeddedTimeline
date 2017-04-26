@@ -83,28 +83,6 @@
     </style>
 </head>
 <body>
-               <h2 id="timelines">Timelines</h2>
-        <p>As with tweets, there are two ways to embed <a href="https://dev.twitter.com/web/embedded-timelines">Timeline widgets</a> - with the source from Twitter (<a href="#timelineEmbedded">embedded</a>), or via widget ID (<a href="#timelineLinked">linked</a>).</p>
-
-        <h3 id="timelineEmbedded">Embedded</h3>
-        <p>Given the source for an embedded Timeline</p>
-
-        <pre><code class="language-markup">
-&lt;a class="twitter-timeline"  href="https://twitter.com/IAmAru/lists/food-trucks" data-widget-id="673710543212052480"&gt;Tweets from https://twitter.com/IAmAru/lists/food-trucks&lt;/a&gt;
-&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");&lt;/script&gt;
-        </code></pre>
-
-        <p>First, remove the <code>&lt;script&gt;</code> element from the markup. Then wrap it in a <code>&lt;twitter-timeline&gt;</code> tag:</p>
-
-        <pre><code class="language-markup">
-&lt;twitter-timeline&gt;
-    &lt;a class="twitter-timeline"
-       href="https://twitter.com/IAmAru/lists/food-trucks"
-       data-widget-id="673710543212052480"&gt;
-       Tweets from https://twitter.com/IAmAru/lists/food-trucks
-    &lt;/a&gt;
-&lt;twitter-timeline&gt;</code></pre>
-
         <div class="panel panel-default">
             <div class="panel-body">
                 <div class="row" ng-controller="ToggleVisibilityCtrl">
