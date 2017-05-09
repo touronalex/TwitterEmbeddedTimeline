@@ -1,33 +1,24 @@
 {
-  "name": "ngtweet",
-  "version": "0.6.1",
+  "name": "ngtweet-site",
+  "version": "0.1.1",
+  "homepage": "https://github.com/arusahni/ngtweet",
   "authors": [
     "Aru Sahni <arusahni@gmail.com>"
   ],
-  "description": "An AngularJS module that provides an interface into Twitter's embedded widget library.",
-  "main": "dist/ngtweet.js",
-  "keywords": [
-    "angular",
-    "angularjs",
-    "twitter",
-    "tweet",
-    "widget"
-  ],
+  "description": "A demo site for ngTweet",
   "license": "MIT",
-  "homepage": "https://github.com/arusahni/ngtweet",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "demo",
     "test",
     "tests"
   ],
   "dependencies": {
-      "angular": ">= 1.0.8"
-  },
-  "devDependencies": {
-      "bootstrap": "~3.3.5",
-      "angular-route": "~1.4.2"
+    "angular": "~1.4.2",
+    "ngtweet": "~0.6.0",
+    "angular-ui-bootstrap": "~0.13.0",
+    "prism": "~1.0.0"
   }
 }
